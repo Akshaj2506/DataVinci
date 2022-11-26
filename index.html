@@ -3,9 +3,102 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>Checkout</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-   
+   <header>
+      <nav>
+         <div class="logo-container">
+            <img src="logo.svg" alt="">
+         </div>
+      </nav>
+   </header>
+   <main>
+      <span id="nav"><a href="">Home ></a> Checkout</span>
+      <div class="heading-container">
+         <h1>Secure One-Step Checkout</h1>
+         <h3>Your product will be available immediately after purchase</h3>
+      </div>
+      <div class="countdown-banner-container">
+         <img src="Icons8_flat_alarm_clock.svg.png" alt="">
+         <div class="countdown-banner">
+            <h4>LIMITED TIME OFFER</h4>
+            <span id="time">Ends in <span id="target-time">00:00:00</span></span>
+            <span id="right-align"><strong id="ten-off">GET 10% OFF</strong> Use Code: <strong>EXAMSTART</strong></span>
+         </div>
+      </div>
+      <div class="review-order-container">
+         <div class="review-head">
+            <h3>Review your order</h3>
+            <span>The following items have been added to your shopping cart.</span>
+         </div>
+         <div class="review-body">
+            <table id="cart-table" CELLSPACING="0">
+               <thead>
+                  <tr>
+                     <th>#</th>
+                     <th>Product Description</th>
+                     <th>Price</th>
+                     <th>Actions</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr class="product-row">
+                     <td><strong id="serial-num">1</strong></td>
+                     <td>
+                        <div class="product-desc">
+                           <a href="" id="product-name">Microsoft 62-193 Premium Bundle</a>
+                           <span id="file-type">Premium file</span>
+                           <span id="product-type">Training Course</span>
+                           <div class="options-holder">
+                              <label for="options">Get new questions updates for: </label>
+                              <select name="options" id="options">
+                                 <option value="30day" selected>30 Days (Free)</option>
+                                 <option value="60day">60 Days ($2.99)</option>
+                                 <option value="90day">90 Days ($3.99)</option>
+                              </select>
+                           </div>
+                        </div>
+                     </td>
+                     <td>
+                        <div class="price-holder">
+                           <span id="actual-price">$54.99</span>
+                           <span id="discounted-price">$49.49</span>
+                           <div class="savings">
+                              <span>Saved 10% Off</span>
+                           </div>
+                        </div>
+                     </td>
+                     <td>
+                        <button onclick="removeItem()">Remove</button>
+                     </td>
+                  </tr>
+               </tbody>
+               <tfoot>
+                  <tr>
+                     <td></td>
+                     <td></td>
+                     <td>Subtotal: <strong id="subtotal">$54.99</strong></td>
+                     <td></td>
+                  </tr>
+               </tfoot>
+            </table>
+         </div>
+      </div>
+      <div class="customer-satisfaction">
+         <div>
+            <img src="approval-badge.png" alt="">
+            <div class="satisfaction-head">
+               <h3>Satisfaction Guaranteed</h3>
+               <span><strong>98.4% </strong>Pass Rate</span>
+            </div>
+         </div>
+         <p>Our team works hard to provide students with high exam practice test questions and compelling leanring experiences. We're confident of the quality level of the products we offer and provide no hassle satisfaction guarantee.</p>
+      </div>
+   </main>
 </body>
 </html>

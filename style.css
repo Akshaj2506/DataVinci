@@ -1,0 +1,289 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: 'Montserrat';
+}
+
+:root {
+   --blue: rgb(0, 128, 255);
+}
+
+header nav {
+   width: 100%;
+   background: rgb(230, 230, 230);
+   padding: 20 10;
+   border-bottom: 2px solid lightgrey;
+}
+
+main {
+   padding: 20 10;
+}
+
+span#nav {
+   color: lightgray;
+   font-size: 14px;
+   margin: 10 0;
+   display: block;
+}
+
+span#nav a {
+   text-decoration: none;
+   color: var(--blue);
+}
+
+.heading-container {
+   margin: 30 0;
+}
+
+.heading-container h1 {
+   font-size: 28px;
+}
+
+.heading-container h3 {
+   font-size: 24px;
+   text-transform: capitalize;
+   margin: 10 0;
+   color: var(--blue);
+}
+
+#target-time {
+   font-weight: 600;
+}
+
+.countdown-banner-container {
+   display: flex;
+   position: relative;
+}
+
+.countdown-banner {
+   width: 100%;
+   background: linear-gradient(to right, orange, rgb(255, 94, 0));
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   place-items: center;
+   padding: 10 50;
+   border-radius: 50px;
+}
+
+.countdown-banner>* {
+   font-size: 20px;
+}
+
+.countdown-banner h4 {
+   place-self: start;
+}
+
+#right-align {
+   place-self: end;
+}
+
+img[src="Icons8_flat_alarm_clock.svg.png"] {
+   height: 50px;
+   position: absolute;
+   top: 0;
+   left: -5px;
+}
+
+/* Review Order Section */
+.review-order-container {
+   margin: 30 30 0 0;
+   float: left;
+   background-color: rgb(237, 244, 255);
+   padding: 20 30;
+   border: 1px solid lightgrey;
+   width: 66%;
+   border-radius: 10px;
+}
+
+.review-head span {
+   margin: 10 0 20 0;
+   display: block;
+}
+
+#cart-table {
+   width: 100%;
+   outline: 1px solid lightgrey;
+   border-radius: 10px;
+   border-collapse: collapse;
+}
+
+th {
+   background-color: rgb(238, 238, 238);
+   font-size: 18px;
+   font-weight: 400;
+}
+
+tbody tr td {
+   background-color: white;
+   padding: 30 20;
+   font-size: 16px;
+}
+
+#product-name,
+#file-type,
+#product-type,
+#options {
+   display: block;
+   padding-bottom: 5;
+}
+tbody tr td:nth-child(1) {
+   border-bottom: 1px solid rgb(207, 210, 215);
+   border-top: 1px solid rgb(207, 210, 215);
+}
+tbody tr td:nth-child(3) {
+   border-bottom: 1px solid rgb(207, 210, 215);
+   border-top: 1px solid rgb(207, 210, 215);
+   text-align: center;
+}
+tbody tr td:nth-child(4) {
+   border-bottom: 1px solid rgb(207, 210, 215);
+   border-top: 1px solid rgb(207, 210, 215);
+   border-left: 1px solid rgb(207, 210, 215);
+   text-align: center;
+}
+tbody tr td:nth-child(2) {
+   border: 1px solid rgb(207, 210, 215);
+}
+th {
+   border-right: 1px solid rgb(207, 210, 215);
+}
+tfoot {
+   font-size: 18px;
+   background-color: rgb(238, 238, 238);
+   text-align: center;
+}
+#product-name {
+   text-decoration: none;
+   color: var(--blue);
+   font-weight: 600;
+}
+.product-desc {
+   font-size: 14;
+}
+#options {
+   width: 350px;
+   height: 32px;
+   font-size: 16px;
+   font-weight: 600;
+   border: 1px solid rgb(194, 194, 194);
+}
+#actual-price {
+   text-decoration: line-through;
+   color:rgb(173, 173, 173);
+}
+#discounted-price {
+   font-weight: 600;
+}
+.savings {
+   padding: 10 5;
+   background-color: rgb(248, 195, 195);
+   border-radius: 5px;
+}
+.savings span {
+   color: red;
+   font-weight: 600;
+}
+button[onclick="removeItem()"] {
+   padding: 20 35;
+   color: rgb(149, 149, 149);
+   font-weight: 600;
+   font-size: 14;
+   background-color: rgb(224, 224, 224);
+   border: none;
+   cursor: pointer;
+}
+button[onclick="removeItem()"]:hover {
+   background-color: rgb(214, 214, 214);
+}
+.customer-satisfaction {
+   width: 30%;
+   display: inline-block;
+   padding: 20;
+   margin: 30 0;
+   background-color: rgb(181, 244, 181);
+   border-radius: 10px;
+}
+.customer-satisfaction img {
+   height: 36px;
+   display: inline-block;
+   margin-right: 10;
+}
+.satisfaction-head {
+   display: inline-block;
+}
+.satisfaction-head h3 {
+   color: rgb(9, 241, 9);
+   font-size: 20px;
+}
+.customer-satisfaction p {
+   line-height: 24px;
+   font-size: 18;
+   margin-top: 20px;
+}
+
+/* Code for responsiveness */
+@media only screen and (max-width:768px){
+   nav {
+      display: flex;
+      justify-content: center;
+   }
+   .countdown-banner-container {
+      margin: 0 20;
+   }
+   .countdown-banner {
+      background: rgb(247, 221, 194);
+      display: block;
+      width: 100%;
+      padding: 10 0;
+      border-radius: 10px;
+      border: 2px solid orange;
+   }
+   .countdown-banner h4,
+   .countdown-banner span {
+      font-size: 14px;
+   }
+   .countdown-banner > * {
+      display: block;
+      text-align: center;
+   }
+   #time {
+      margin: 10 0;
+   }
+   img[src="Icons8_flat_alarm_clock.svg.png"] {
+      left: 105px;
+      top: 5;
+      height: 25px;
+   }
+   #right-align {
+      background: orange;
+      width: 100%;
+      display: block;
+      padding: 10 0;
+   }
+   #ten-off {
+      margin-right: 20;
+   }
+   .review-order-container {
+      width: 100%;
+   }
+   table {
+      width: 300px;
+   }
+   #options {
+      width: 100px;
+      font-size: 10px;
+   }
+   .product-desc {
+      font-size: 12px;
+   }
+   .savings {
+      font-size: 10px;
+   }
+   button[onclick="removeItem()"] {
+      padding: 5;
+   }
+   .customer-satisfaction {
+      width: 100%;
+   }
+}
