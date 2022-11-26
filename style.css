@@ -184,7 +184,7 @@ tfoot {
    color: red;
    font-weight: 600;
 }
-button[onclick="removeItem()"] {
+button[onclick="removeItem(this)"] {
    padding: 20 35;
    color: rgb(149, 149, 149);
    font-weight: 600;
@@ -193,7 +193,7 @@ button[onclick="removeItem()"] {
    border: none;
    cursor: pointer;
 }
-button[onclick="removeItem()"]:hover {
+button[onclick="removeItem(this)"]:hover {
    background-color: rgb(214, 214, 214);
 }
 .customer-satisfaction {
@@ -221,7 +221,12 @@ button[onclick="removeItem()"]:hover {
    font-size: 18;
    margin-top: 20px;
 }
-
+#no-items-available {
+   display: none;
+   height: 200px;
+   justify-content: center;
+   align-items: center;
+}
 /* Code for responsiveness */
 @media only screen and (max-width:768px){
    nav {
@@ -280,7 +285,7 @@ button[onclick="removeItem()"]:hover {
    .savings {
       font-size: 10px;
    }
-   button[onclick="removeItem()"] {
+   button[onclick="removeItem(this)"] {
       padding: 5;
    }
    .customer-satisfaction {

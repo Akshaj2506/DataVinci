@@ -1,0 +1,23 @@
+[
+   {
+      "productName": "Microsoft 62-193 Premium Bundle",
+      "fileType": "Premium File",
+      "productType": "Training Course",
+      "actualPrice": "$54.99",
+      "discountedPrice": "$49.50"
+   },
+   {
+      "productName": "Microsoft 62-193 Premium Bundle",
+      "fileType": "Premium File",
+      "productType": "Training Course",
+      "actualPrice": "$54.99",
+      "discountedPrice": "$49.60"
+   },
+   {
+      "productName": "Microsoft 62-193 Premium Bundle",
+      "fileType": "Premium File",
+      "productType": "Training Course",
+      "actualPrice": "$4.99",
+      "discountedPrice": "$1.38"
+   }
+]
