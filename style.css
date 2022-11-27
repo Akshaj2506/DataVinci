@@ -236,9 +236,6 @@ button[onclick="removeItem(this)"]:hover {
       display: flex;
       justify-content: center;
    }
-   body {
-      zoom: 80%;
-   }
    .countdown-banner-container {
       margin: 0 20;
    }
@@ -262,7 +259,7 @@ button[onclick="removeItem(this)"]:hover {
       margin: 10 0;
    }
    img[src="Icons8_flat_alarm_clock.svg.png"] {
-      left: 27vw;
+      left: 26vw;
       top: 5;
       height: 25px;
    }
