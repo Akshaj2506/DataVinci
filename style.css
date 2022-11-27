@@ -90,7 +90,7 @@ img[src="Icons8_flat_alarm_clock.svg.png"] {
 
 /* Review Order Section */
 .review-order-container {
-   margin: 30 30 0 0;
+   margin: 30 30 30 0;
    float: left;
    background-color: rgb(237, 244, 255);
    padding: 20 30;
@@ -259,7 +259,7 @@ button[onclick="removeItem(this)"]:hover {
       margin: 10 0;
    }
    img[src="Icons8_flat_alarm_clock.svg.png"] {
-      left: 105px;
+      left: 27vw;
       top: 5;
       height: 25px;
    }
