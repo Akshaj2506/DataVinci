@@ -9,6 +9,9 @@
    --blue: rgb(0, 128, 255);
 }
 
+body {
+   zoom: 90%;
+}
 header nav {
    width: 100%;
    background: rgb(230, 230, 230);
