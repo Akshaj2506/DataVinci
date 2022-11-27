@@ -236,6 +236,9 @@ button[onclick="removeItem(this)"]:hover {
       display: flex;
       justify-content: center;
    }
+   body {
+      zoom: 90%;
+   }
    .countdown-banner-container {
       margin: 0 20;
    }
